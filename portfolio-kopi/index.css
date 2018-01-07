@@ -159,9 +159,11 @@ p {
 
 /*------------FRONTPAGE-------------*/
 
-.ref {
+li {
     color: #b4aeae;
     margin-left: 4%;
+    margin-bottom: 2%;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .ref p {
