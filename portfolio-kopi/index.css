@@ -33,12 +33,24 @@ a:hover {
     color: rgb(247, 212, 18);
 }
 
+.ref {
+    color: #b4aeae;
+    margin-left: 4%;
+}
+
+.ref p {
+    color: #918989;
+    font-weight: 100;
+}
+
+
+
 .frontpage {
     background-image: url(frontpage-01.svg);
     background-size: 100%;
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 95vw;
     background-repeat: no-repeat;
 }
 
