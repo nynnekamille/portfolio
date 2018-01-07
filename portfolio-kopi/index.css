@@ -24,6 +24,15 @@ body {}
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(247, 212, 18);
+}
+
 .frontpage {
     background-image: url(frontpage-01.svg);
     background-size: 100%;
@@ -372,6 +381,7 @@ p {
     background-color: #EFCA16;
 }
 
+
 /* Show the dropdown menu on hover */
 
 .dropdown:hover .dropdown-content {
@@ -588,4 +598,21 @@ p {
 
 .column_redesign img:hover {
     opacity: 0.6;
+}
+
+
+.youtube iframe {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.youtube {
+    position: relative;
+    padding-bottom: 60%;
+    /* 16:9 Aspect Ratio */
+    padding-top: 1px;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    margin-left: 6%;
 }
