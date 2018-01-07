@@ -19,19 +19,45 @@ nav a:hover {
 
 body {}
 
-#sectionwrap {
-    display: flex;
-    flex-wrap: wrap;
+.sectionwrap {
+    height: 100%;
 
 }
 
-#frontpage {
+.frontpage {
     background-image: url(frontpage-01.svg);
     background-size: 100%;
     position: relative;
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 755px) {
+    .frontpage {
+        background-image: url(navn-01.svg);
+        height: 100vw;
+        width: 100vw;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .frontpage {
+        background-image: url(navn-01.svg);
+        height: 100vw;
+        width: 100vw;
+        margin-top: 32%;
+    }
+}
+
+@media screen and (max-width: 367px) {
+    .frontpage {
+        background-image: url(navn-01.svg);
+        height: 100vw;
+        width: 100vw;
+        margin-top: 46%;
+    }
 }
 
 #wrap {
@@ -293,8 +319,8 @@ p {
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
-    height: 7.2vw;
-    width: 7.1vw;
+    height: 6.2vw;
+    width: 6.1vw;
     background-size: cover;
     margin: 2vw;
     /*
@@ -350,6 +376,20 @@ p {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+@media screen and (max-width: 755px) {
+    .dropbtn {
+        height: 8vw;
+        width: 7.9vw;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .dropbtn {
+        height: 13vw;
+        width: 12.9vw;
+    }
 }
 
 /*----------------TIMELINE/CV----------------*/
