@@ -492,4 +492,7 @@ p {
     .right {
         left: 0%;
     }
+    #cv_img {
+        width: 100%;
+    }
 }
