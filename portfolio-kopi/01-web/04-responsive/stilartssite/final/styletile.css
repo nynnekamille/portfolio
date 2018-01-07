@@ -1,0 +1,167 @@
+    /*--------CSS--------*/
+
+    html {
+        font-size: 1em;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .styletile,
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .styletile img {
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .break1 {
+        background-color: white;
+        border-bottom-style: solid;
+        border-bottom-color: red;
+    }
+
+    .typografi {
+        background-color: white;
+        border-bottom-style: solid;
+        border-bottom-color: blue;
+    }
+
+    .billedstil {
+        background-color: white;
+        border-bottom-style: solid;
+        padding-bottom: 15px;
+        border-bottom-color: yellow;
+    }
+
+    .former {
+        background-color: white;
+        border-bottom-style: solid;
+        padding-bottom: 50px;
+        border-bottom-color: black;
+        display: flex;
+        justify-content:
+    }
+
+    .oval {
+        width: 100px;
+        height: 100px;
+        background: red;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        margin-right: 20px;
+    }
+
+    .square {
+        width: 100px;
+        height: 100px;
+        background: black;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid blue;
+        margin-left: 20px;
+    }
+    /*--------------------TYPOGRAFI---------------------*/
+
+    .forklaring {
+        font-size: 1rem;
+        margin-left: 1em;
+    }
+
+    .titel {}
+
+    h1 {
+        font-family: 'Baumans', cursive;
+        font-weight: 400;
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.4em;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+    }
+    /*---------------------BOKSE------------------------*/
+
+    h4 {
+        font-family: 'Baumans', cursive;
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    .image {
+        flex-basis: 300px;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image img {
+        height: 200px;
+        margin-left: 40px;
+    }
+
+    .image splash {
+        height: 200px;
+        margin-left: 40px;
+    }
+    /*---------------------FARVER-----------------------*/
+
+    .flexcontainer {
+        display: flex;
+        justify-content: space-around
+    }
+
+    div.flexcontainer {}
+
+    .farvebox {
+        width: 100px;
+        height: 90px;
+    }
+
+    .farve1 {
+        background-color: #ff0000;
+    }
+
+    .farve2 {
+        background-color: #ffffff;
+        border: 1px solid black;
+    }
+
+    .farve3 {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    .farve4 {
+        background-color: #ffff00;
+    }
+
+    .farve5 {
+        background-color: #0000ff;
+    }

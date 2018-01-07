@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+#baggrund {
+    width: 100%;
+    height: 100%;
+    background-image: url(landscapefinal-01.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+
+#saloon1_container {
+    width: 28.5vw;
+    height: 78.78vw;
+}
+
+.saloon {
+    background-image: url(saloon01.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+
+#saloon_container {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+
+#saloon_sprite {
+    background-image: url(salooncloud-02.svg);
+    width: 48.75vw;
+    height: 50vw;
+    background-size: 500%;
+}
+
+.saloonflip {
+    animation-name: saloonflip_kf;
+    animation-duration: 2.5s;
+    animation-timing-function: steps(4);
+    animation-fill-mode: forwards;
+}
+
+@keyframes saloonflip_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -400% 0%;
+    }
+}
+
+
+#sheriff_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#sheriff_sprite {
+    background-image: url(sheriffhest.svg);
+    width: 20vw;
+    height: 20vw;
+    background-size: 800%;
+}
+
+.walkcycle1 {
+    animation-name: walkcycle_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(8);
+}
+
+
+@keyframes walkcycle_kf {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: -800%;
+    }
+}
+
+#cowboy_container {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+}
+
+#cowboy_sprite {
+    background-image: url(shot.svg);
+    width: 22.71vw;
+    height: 22vw;
+    background-size: 1200%;
+}
+
+.shoot1 {
+
+    animation-name: sprite1_kf;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(12);
+}
+
+@keyframes sprite1_kf {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: -1200%;
+    }
+}
+
+.display_none {
+    display: none;
+}

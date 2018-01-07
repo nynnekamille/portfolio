@@ -1,0 +1,600 @@
+body {
+    margin: 0;
+}
+
+
+/*********** Baggrund ************/
+
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.zoomind {
+    animation-name: zoomind_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes zoomind_kf {
+    0% {
+        transform: scale(1) translate(0vw, 0vw);
+    }
+    100% {
+        transform: scale(13) translate(-13vw, -9vw);
+    }
+}
+
+#baggrund {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/baggrund.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+
+
+/*********** Baggrund Slut *********/
+
+/*********** Forgrund *************/
+
+#forgrund {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/forgrund.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 17%;
+    z-index: 2;
+}
+
+#kanin {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/kanin.svg);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    position: absolute;
+    margin-left: 93%;
+    margin-top: 40%;
+}
+
+
+/*********** Forgrund slut ********/
+
+/*********** Skyer    *************/
+
+#sky1 {
+    background-image: url(img/sky1.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    width: 20.31vw;
+    height: 20.33vw;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    animation-name: sky1_kf;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+@keyframes sky1_kf {
+    0% {
+        left: -15%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+#sky2 {
+    background-image: url(img/sky2.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 20.31vw;
+    height: 20.33vw;
+    position: absolute;
+    top: 3%;
+    right: 0%;
+    animation-name: sky2_kf;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+@keyframes sky2_kf {
+    0% {
+        right: -20%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+#sky3 {
+    background-image: url(img/sky3.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 20.31vw;
+    height: 20.33vw;
+    position: absolute;
+    top: 19%;
+    right: 0%;
+    animation-name: sky3_kf;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+@keyframes sky3_kf {
+    0% {
+        right: -30%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+
+/********** Skyer slut ************/
+
+/********** knapper ************/
+
+#startknap {
+    background-color: #202532;
+    border-radius: 50%;
+    width: 30vw;
+    height: 15vw;
+    cursor: pointer;
+    border: 0.4vw solid #f4912d;
+    font-size: 5vw;
+    color: #f4912d;
+    z-index: 2;
+    box-shadow: 0 0.9vw 1vw #999;
+    position: absolute;
+    top: 24vw;
+    left: 35vw;
+    animation-name: startknap_kf;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes startknap_kf {
+    0% {
+        bottom: -30%;
+    }
+    100% {
+        bottom: 30%;
+    }
+}
+
+#tjek_telefon {
+    background-color: #202532;
+    border-radius: 50%;
+    width: 30vw;
+    height: 15vw;
+    cursor: pointer;
+    border: 0.4vw solid #f4912d;
+    font-size: 5vw;
+    color: #f4912d;
+    z-index: 2;
+    box-shadow: 0 0.9vw 1vw #999;
+    position: absolute;
+    top: 34vw;
+    left: 5vw;
+}
+
+#valg_del {
+    background-color: #555555;
+    /* sort */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    top: 22vw;
+    left: 55vw;
+    z-index: 2
+}
+
+#valg_slet {
+    background-color: #555555;
+    /* sort */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    top: 22vw;
+    left: 40vw;
+    z-index: 2
+}
+
+/************* knapper slut *****************/
+
+/************* Fugl med skilt ****************/
+
+#fugl_container {
+    position: absolute;
+    top: 7vw;
+    z-index: 1;
+}
+
+#fugl_sprite {
+    background-image: url(SVG/fuglens_spritesheet.svg);
+    /* 803,33x626 */
+    width: 60vw;
+    height: 47vw;
+    background-size: 300% 100%;
+}
+
+.fugl_start_pos {
+    left: -100%;
+}
+
+.fugl_flyver {
+    animation-name: fugl_flyver_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes fugl_flyver_kf {
+    0% {
+        left: -20%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.fugl_flyvecycle {
+    animation-name: fugl_flyvecycle_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
+}
+
+@keyframes fugl_flyvecycle_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -300% 0%;
+    }
+}
+
+
+/*************** Eva **********************/
+
+.startpos_eva_container {
+    top: 55%;
+    right: -20%;
+}
+
+#eva_container {
+    position: absolute;
+    /*  z-index: 10; */
+}
+
+.eva_container_kommer_ind {
+    animation-name: louis_container_kommer_ind_kf;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes louis_container_kommer_ind_kf {
+    from {
+        left: 120%;
+    }
+    to {
+        left: 35%;
+    }
+}
+
+#eva_walkcycle {
+    width: 10vw;
+    height: 21.4vw;
+    background-image: url(bitmoji7walk.svg);
+    background-size: 1000% 100%;
+}
+
+.eva_walkcycle_10frames {
+    animation-name: eva_walkcycle_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: steps(10);
+}
+
+@keyframes eva_walkcycle_kf {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000% 0;
+    }
+}
+
+.eva_kig_cyckle {
+    background-position: 0 0;
+}
+
+.kigpos_eva_container {
+    top: 55%;
+    left: 35%;
+}
+
+.eva_drejer {
+    animation-name: eva_drejer_kf;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    transform: scaleX(-1);
+}
+
+@keyframes eva_drejer_kf {
+    0% {
+        transform: scaleX(1);
+    }
+    15% {
+        transform: scaleX(1);
+    }
+    20% {
+        transform: scaleX(-1);
+    }
+    32% {
+        transform: scaleX(-1);
+    }
+    40% {
+        transform: scaleX(-1);
+    }
+    45% {
+        transform: scaleX(1);
+    }
+    69% {
+        transform: scaleX(1);
+    }
+    72% {
+        transform: scaleX(-1);
+    }
+}
+
+
+/******************* Telefon *******************/
+
+#telefon {
+    position: absolute;
+    top: 7vw;
+    z-index: 1;
+    background-image: url(tlf_sprite.svg);
+    /* 462x396 */
+    width: 6vw;
+    height: 5vw;
+    background-size: 300% 100%;
+    left: 60vw;
+    top: 35vw;
+}
+
+.telefon_billedecycle {
+    animation-name: telefon_billedecycle_kf;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+}
+
+@keyframes telefon_billedecycle_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -300% 0%;
+    }
+}
+
+
+/********************* Slange **********************/
+
+/*
+#slange_container {
+    position: absolute;
+    top: 35vw;
+    z-index: 2;
+}
+
+#slange_sprite {
+    background-image: url(slange_sprite.svg);
+width: 5vw;
+    height: 4vw;
+    background-size: 700% 100%;
+}
+
+.slange_start_pos {
+    left: 120%;
+}
+
+.slange_move {
+    animation-name: slange_move_kf;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes slange_move_kf {
+    0% {
+        left: 120%;
+    }
+    100% {
+        left: 65%;
+    }
+}
+
+.slange_movecycle {
+    animation-name: slange_movecycle_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(7);
+}
+
+@keyframes slange_movecycle_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -700% 0%;
+    }
+}
+*/
+
+/******************* Flod ***********************/
+
+.flod_hide {
+    display: none;
+}
+
+#flod {
+    background-image: url(img/b%C3%B8lgen-03.svg);
+    background-size: 500% 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    z-index: 3;
+}
+
+
+.flod_ind {
+    animation-name: flod_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(4);
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+}
+
+
+/*NÅR FUNKTION KALDES I JS: $("#flod).removeClass("flod_hide");,
+$("#flod).addClass("flod_ind");
+*/
+
+@keyframes flod_kf {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -400%;
+    }
+}
+
+.baad_hide {
+    display: none;
+}
+
+#payoff1 {
+    background-image: url(mandibaad-03.svg);
+    background-size: 100%;
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.baad_ind {
+    animation-name: baad_kf;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    z-index: 4;
+}
+
+@keyframes baad_kf {
+    0% {
+        top: 30%;
+        right: 0;
+    }
+    100% {
+        top: 30%;
+        right: 41.5%;
+    }
+}
+
+.engel_hide {
+    display: none;
+}
+
+#payoff2 {
+    background-image: url(pse-04.svg);
+    background-size: 400% 100%;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    z-index: 2;
+}
+
+.engel_ind {
+    animation-name: engel_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes engel_kf {
+    0% {
+
+        background-position: 0%;
+    }
+    100% {
+
+        background-position: -400%;
+    }
+}
+
+#engel_container {
+    position: absolute;
+    top: 0;
+    left: -20vw;
+    z-index: 2;
+}
+
+.engel_move {
+    animation-name: engel_move_kf;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes engel_move_kf {
+    0% {
+        top: 0;
+        left: -20vw;
+    }
+    100% {
+        top: 20vw;
+        left: 17vw;
+    }
+}

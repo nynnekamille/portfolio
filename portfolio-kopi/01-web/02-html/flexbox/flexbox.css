@@ -1,0 +1,30 @@
+.container {
+    border: 2px solid black;
+    padding: 2px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.box1 {
+    border: 2px solid black;
+    padding: 2px;
+    background-color: #ff0000;
+    flex-grow: 1;
+}
+
+.box2 {
+    border: 2px solid black;
+    padding: 2px;
+    background-color: #008000;
+    flex-grow: 1;
+    align-self: stretch
+}
+
+.box3 {
+    border: 2px solid black;
+    padding: 2px;
+    background-color: #0000ff;
+    flex-grow: 1;
+}

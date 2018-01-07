@@ -1,0 +1,23 @@
+.top {
+    border: 1px solid black;
+}
+
+.bottom {
+    border: 1px solid red;
+}
+
+img {
+    width: 20vw;
+}
+
+.top img {
+    float: right;
+}
+
+.bottom img {
+    float: left;
+}
+
+.clearfloat {
+    clear: both;
+}

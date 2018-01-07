@@ -1,0 +1,607 @@
+/*****OVERORDNET****/
+
+h4,
+h2,
+nav,
+h5 {
+    font-family: 'Baumans', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+h2 {
+    font-size: 1.7em;
+    color: blue;
+}
+
+h5 {
+    font-style: oblique;
+    font-size: 1em;
+}
+
+.sectionwrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/***MENU***/
+
+header nav {
+    font-family: 'Baumans', cursive;
+    text-align: right;
+    margin: 0 8vw 0 0;
+    background-color: rgba(255, 255, 255, 0.81);
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding-left: 4vw;
+    display: block;
+}
+
+header nav a:hover {
+    color: #d10a0a;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    padding: 0.3em;
+}
+
+@media screen and (min-width: 700px) {
+    header nav a {
+        display: inline-block;
+    }
+}
+
+
+/*****SPLASH******/
+
+#splash .logo {
+    padding: 50px;
+    width: 10vw;
+    box-sizing: content-box;
+}
+
+#splash .logo img {
+    width: 100%;
+}
+
+#splash {
+    width: 100vw;
+    height: 167.2vw;
+    background-image: url(img/mobil_portraet.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (orientation: landscape) {
+    #splash {
+        background-image: url(img/mobil_landscape.jpg);
+        height: 59.8vw;
+    }
+}
+
+@media screen and (min-width: 376px) and (orientation: portrait) {
+    #splash {
+        background-image: url(img/tablet_portraet.jpg);
+        height: 133vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #splash {
+        background-image: url(img/tablet_landscape.jpg);
+        height: 75vw;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #splash {
+        background-image: url(img/desktop_16_9.jpg);
+        height: 56.25vw;
+    }
+}
+
+@media screen and (min-width: 5120px) {
+    #splash {
+        background-image: url(img/desktopretina_16_9.jpg);
+        height: 56.25vw;
+    }
+}
+
+
+/*****OM*****/
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om .column {
+    flex-grow: 1;
+    flex-basis: 400px;
+    border-right: solid blue;
+    padding: 20px;
+    border-left: solid blue;
+}
+
+#om .column_content {
+    padding: 60px;
+}
+
+
+/****EKSEMPLER****/
+
+#eksempler .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#eksempler .column {
+    flex-grow: 1;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    flex-basis: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#eksempler .column_content {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow: scroll;
+    justify-content: center;
+}
+
+#eksempler .top {
+    text-align: center;
+}
+
+#eksempler .bottom {
+    align-self: flex-end;
+}
+
+.wasilly {
+    background-image: url(img400/wasilly.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    background-position: center;
+}
+
+.qualitat {
+    background-image: url(img400/qualitat.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.bauhausdessau {
+    background-image: url(img400/bauhaus.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/***IMG***/
+
+.herbert {
+    background-image: url(img/herbertbayer400.jpg);
+    border: solid black;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+    height: 400px;
+    width: 400px;
+    flex-grow: 1;
+}
+
+#typografi .speechbubble1 {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+#typografi .speechbubble img {
+    width: 100%;
+}
+
+#typografi .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#typografi .column_wide {
+    flex-basis: 400px;
+    flex-grow: 3;
+    height: 100%;
+    padding: 25px;
+}
+
+#typografi .column_narrow {
+    flex-grow: 1;
+    flex-basis: 400px;
+    border: 2px solid black;
+    align-self: center;
+    background-size: cover;
+    width: 390px;
+    height: 100%;
+}
+
+.alphabet {
+    background-image: url(img/99866ed644044e9178865faea2d459ce.jpg);
+    background-size: 100%;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+#typografi .top {
+    align-self: flex-start;
+}
+
+#typografi .top .speechbubble {
+    text-align: center;
+}
+
+#typografi .bottom {
+    align-self: flex-end;
+}
+
+#typografi .top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/****speechbubble******/
+
+
+/*.speechbubble {
+    position: relative;
+    background: #d10a0a;
+    border-radius: .4em;
+    width: 300px;
+    padding: 5px;
+}
+
+.speechbubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #d10a0a;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}*/
+
+#komposition_farver .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#komposition_farver .column_content {
+    display: flex;
+}
+
+#komposition_farver .column_wide {
+    flex-grow: 5;
+    flex-wrap: wrap;
+    width: 400px;
+    flex-basis: 400px;
+    flex-grow: 3;
+    padding: 50px;
+    text-align: center;
+}
+
+#komposition_farver .column_narrow {
+    flex-wrap: wrap;
+    padding: 2px;
+    flex-grow: 1;
+    width: 390px;
+    overflow: scroll;
+    padding: 20px;
+}
+
+#komposition_farver .farver {
+    background-image: url(img/colors400.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin-left: 60px;
+}
+
+#komposition_farver .bhdesign {
+    background-image: url(img/typo-bauhaus.png);
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin-left: 60px;
+}
+
+.colors {
+    height: 250px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.color2 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.color3 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.color4 {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.color5 {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.color6 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    background-color: royalblue;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*****SPLASH*****/
+
+
+/*--------CSS--------*/
+
+#ekstra .styletile,
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+#ekstra .styletile img {
+    width: 100%;
+}
+
+#ekstra .container {
+    padding: 20px;
+}
+
+#ekstra .break1 {
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+}
+
+#ekstra .typografi {
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color: blue;
+}
+
+#ekstra .billedstil {
+    background-color: white;
+    border-bottom-style: solid;
+    padding-bottom: 15px;
+    border-bottom-color: yellow;
+}
+
+#ekstra .former {
+    background-color: white;
+    border-bottom-style: solid;
+    padding-bottom: 50px;
+    border-bottom-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ekstra .oval {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+#ekstra .square {
+    width: 100px;
+    height: 100px;
+    background: black;
+}
+
+#ekstra .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    margin-left: 20px;
+}
+
+
+/*--------------------TYPOGRAFI---------------------*/
+
+#ekstra .forklaring {
+    font-size: 1rem;
+    margin-left: 1em;
+}
+
+#ekstra .titel {}
+
+#ekstra h1 {
+    font-family: 'Baumans', cursive;
+    font-weight: 400;
+    font-size: 2.3em;
+    color: red;
+}
+
+#ekstra h2 {
+    font-family: 'baumans', cursive;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: blue;
+}
+
+#ekstra h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+#ekstra p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+
+/*---------------------BOKSE------------------------*/
+
+#ekstra h4 {
+    font-family: 'Baumans', cursive;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#ekstra .image {
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ekstra .image img {
+    height: 200px;
+    margin-left: 40px;
+}
+
+#ekstra .image splash {
+    height: 200px;
+    margin-left: 40px;
+}
+
+
+/*---------------------FARVER-----------------------*/
+
+#ekstra .flexcontainer {
+    display: flex;
+    justify-content: space-around
+}
+
+#ekstra div.flexcontainer {}
+
+#ekstra .farvebox {
+    width: 100px;
+    height: 90px;
+}
+
+#ekstra .farve1 {
+    background-color: #ff0000;
+}
+
+#ekstra .farve2 {
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+#ekstra .farve3 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#ekstra .farve4 {
+    background-color: #ffff00;
+}
+
+#ekstra .farve5 {
+    background-color: #0000ff;
+}
+
+
+/************************IMAGE**********************/
+
+#ekstra .billedstil {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#ekstra .image1 {
+    background-image: url(img_styletile/33e29f3ac0bed10c473fd300e9e704d3.jpg);
+    background-size: 100%;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat
+}
+
+#ekstra .image2 {
+    background-image: url(img_styletile/bauhausdesign8400w.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat
+}
+
+#ekstra .image3 {
+    background-image: url(img_styletile/colors.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat
+}
+
+#ekstra .image4 {
+    background-image: url(img/bauhaus-logo400w.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat
+}

@@ -1,0 +1,69 @@
+/*--------CSS--------*/
+
+html {
+    font-size: 1em;
+}
+* {
+    box-sizing: border-box;
+}
+.styletile,
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.styletile img {
+    width: 100%;
+}
+.container {
+    padding: 20px;
+}
+
+/*--------------------TYPOGRAFI---------------------*/
+
+.forklaring {
+    font-size: 1rem;
+    margin-left: 1em;
+}
+.titel {}
+h1 {}
+h2 {}
+h3 {}
+p {}
+
+/*---------------------BOKSE------------------------*/
+
+h4 {}
+.image {
+    flex-basis: 300px;
+    flex-grow: 0;
+}
+.image img {
+    width: 100%
+}
+
+/*---------------------FARVER-----------------------*/
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-around
+}
+div.flexcontainer {}
+.farvebox {
+    width: 100px;
+    height: 90px;
+}
+.farve1 {
+    background-color: #ccc;
+}
+.farve2 {
+    background-color: #ccc;
+}
+.farve3 {
+    background-color: #ccc;
+}
+.farve4 {
+    background-color: #ccc;
+}
+.farve5 {
+    background-color: #ccc;
+}

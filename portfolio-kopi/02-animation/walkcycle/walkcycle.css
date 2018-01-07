@@ -1,0 +1,19 @@
+.sprite {
+    background-image: url(Asset%201.svg);
+    width: 5vw;
+    height: 10vw;
+    background-size: 600%;
+    animation-name: sprite_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(6);
+}
+
+@keyframes sprite_kf {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: -600%;
+    }
+}

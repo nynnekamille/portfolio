@@ -1,0 +1,29 @@
+/*Den denne kode sørger for at dine bokse ligger på 4 rækker med lidt afstand */
+
+div div {
+    display: inline-block;
+    width: 20vw;
+    height: 7vw;
+    margin-right: 2vw;
+    background-color: #CCCCCC;
+}
+
+
+/*Herunder er et eksempel på en css til den første boks*/
+
+.boks1 {
+    background-color: red;
+}
+
+.boks2 {
+    background: radial-gradient(magenta, orange, aqua);
+}
+
+.boks3 {
+    background: linear-gradient(-55deg, yellow, hotpink);
+}
+
+.boks4 {
+    text-transform: capitalize;
+    text-decoration-color: aqua;
+}

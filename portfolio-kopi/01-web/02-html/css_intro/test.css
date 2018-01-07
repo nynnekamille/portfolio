@@ -1,0 +1,27 @@
+h1 {
+    color: aqua;
+    font-size: 40px;
+}
+
+p {
+    color: white;
+}
+
+body {
+    background-color: hotpink;
+}
+
+a {
+    display: block;
+    width: 200px;
+    padding: 5px;
+    background-color: pink;
+}
+
+.aqua {
+    color: aqua;
+}
+
+.yellow {
+    color: yellow;
+}

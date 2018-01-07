@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privatsnak</title>
+    <link rel="stylesheet" href="index.css"> </head>
+
+<body>
+    <!-- knapper -->
+    <div>
+        <button id="startknap">START</button>
+    </div>
+    <div>
+        <button id="tjek_telefon">Tjek din telefon</button>
+    </div>
+    <div>
+        <button id="valg_del">Del</button>
+    </div>
+
+    <div>
+        <button id="valg_slet">Slet</button>
+    </div>
+
+
+
+    <!-- knapper slut -->
+    <!--    Lyd         -->
+    <audio id="vingebask_sound" src="lyde/vingebask.mp3"> Your browser does not support the audio element. </audio>
+    <audio id="sms_sound" src="lyde/sms_sound.mp3"> Your browser does not support the audio element. </audio>
+    <!--    Lyd Slut    -->
+    <div id="scene">
+        <div id="baggrund"></div>
+        <div id="sky1"></div>
+        <div id="sky2"></div>
+        <div id="sky3"></div>
+        <div id="forgrund"></div>
+        <div id="kanin"></div>
+
+        <div id="fugl_container" class="fugl_start_pos">
+            <div id="fugl_sprite"></div>
+        </div>
+
+        <div id="slange_container" class="slange_move ">
+            <div id="slange_sprite" class="slange_movecycle"></div>
+        </div>
+        <div id="eva_container">
+            <div id="eva_walkcycle"></div>
+        </div>
+        <div id="telefon"></div>
+        <div id="flod" class="flod_hide"></div>
+        <div id="payoff1" class="baad_hide"></div>
+        <div id="engel_container">
+            <div id="payoff2" class="engel_hide"></div>
+        </div>
+    </div>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

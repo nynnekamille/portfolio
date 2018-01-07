@@ -1,0 +1,7 @@
+#typografi .top img {
+    float: left;
+}
+
+.clearfloat {
+    clear: both;
+}

@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.box {
+    height: 30vw;
+    width: 30vw;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+
+.red {
+    background-color: #ff0000;
+
+}
