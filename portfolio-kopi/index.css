@@ -31,6 +31,10 @@ a {
     color: black;
 }
 
+.app {
+    border: none;
+}
+
 a:hover {
     color: rgb(247, 212, 18);
 }
@@ -290,21 +294,10 @@ li {
 /*----------------ANIMATION----------------*/
 
 #sectionwrap_animation {
-    /*
     display: flex;
     flex-wrap: wrap;
-*/
     background-color: white;
-    /*    margin: 10%;*/
     height: 100%;
-    display: box;
-
-}
-
-
-#sectionwrap_animation {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .text_animation {
@@ -364,6 +357,7 @@ li {
     margin-top: 6%;
     margin-bottom: 10%;
     margin-left: 6%;
+    border: none;
 }
 
 
